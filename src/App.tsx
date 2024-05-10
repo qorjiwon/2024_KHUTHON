@@ -40,7 +40,7 @@ const App = () => {
     return (
         <div className="App">
             {location[Loc] &&
-                <div className={'Marker'} style={{ top: position.y - 40, left: position.x - 20 }}>
+                <div className={'Marker'} style={{ top: position.y - 40, left: position.x + 360 }}>
                     <img src="https://map.pstatic.net/resource/api/v2/image/maps/selected-marker/default.png?version=8"></img>
                 </div>
             }
