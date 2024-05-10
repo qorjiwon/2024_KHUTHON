@@ -1,0 +1,61 @@
+.Score {
+    text-align: center;
+
+    /* 가운데 정렬 */
+    .TotalScore {
+        font-family: Arial;
+        font-size: 1.2em;
+        /* 크기 조절 */
+        font-weight: bold;
+        /* 강조 */
+    }
+
+    .ScoreValue {
+        font-size: 2em;
+        /* 점수 칸의 크기를 크게 조절 */
+        margin-top: 10px;
+        /* 점수 칸과의 간격 설정 */
+    }
+
+    .PollutionTypes {
+        display: flex;
+        /* Flexbox 사용하여 가로로 나열 */
+        justify-content: space-between;
+        /* 각 항목 사이의 간격을 균등하게 분배 */
+        margin-top: 20px;
+
+        /* 항목들과의 간격 설정 */
+        .PollutionType {
+            width: calc(33.33% - 10px);
+
+            /* 3등분하여 각 항목의 너비 설정 */
+            .PollutionTypeName {
+                font-weight: bold;
+                /* 각 항목 이름의 강조 설정 */
+            }
+
+            .PollutionTypeScore {
+                margin-top: 5px;
+                /* 점수 칸과의 간격 설정 */
+            }
+
+            &:nth-child(1) {
+                .PollutionTypeScore {
+                    color: red;
+                }
+            }
+
+            &:nth-child(2) {
+                .PollutionTypeScore {
+                    color: green;
+                }
+            }
+
+            &:nth-child(3) {
+                .PollutionTypeScore {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
