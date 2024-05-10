@@ -1,15 +1,14 @@
 import { useCallback, useEffect, useState } from 'react';
 import './App.scss';
 import logo from './Assets/logo.svg';
-import getMap from 'Data/Map';
 import Score from 'Sidebar/Score';
+import { Graph } from 'Sidebar/Graph';
 
 const App = () => {
     
     useEffect(() => {
       const script = document.createElement('script');
       //script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.CLIENT_ID}`;
-
       script.async = true;
   
       script.onload = () => {
@@ -33,6 +32,7 @@ const App = () => {
         <div className="App">
             <div className={'Sidebar'}>
                 <Score></Score>
+                <Graph/>
             </div>
             <div id="map" className={'NaverMap'}></div>
         </div>
