@@ -1,23 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-type ChartData = {
-    options: {
-        chart: {
-            id: "basic-bar"
-        },
-        xaxis: {
-            categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-        }
-    },
-    series: [
-        {
-            name: "series-1",
-            data: [30, 40, 45, 50, 49, 60, 70, 91]
-        }
-    ]
-};
-
 export const Graph = () => {
     const tempChartData = {
         state: {
@@ -31,8 +14,16 @@ export const Graph = () => {
             },
             series: [
                 {
-                    name: "series-1",
+                    name: "대기",
                     data: [30, 40, 45, 50, 49, 60, 70, 91]
+                },
+                {
+                    name: "수질",
+                    data: [40, 40, 44, 40, 42, 45, 49, 55]
+                },
+                {
+                    name: "토양",
+                    data: [20, 30, 34, 38, 44, 44, 44, 50]
                 }
             ]
         }
