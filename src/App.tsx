@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import './App.scss';
 import logo from './Assets/logo.svg';
 import getMap from 'Data/Map';
+import Score from 'Sidebar/Score';
 
 const App = () => {
     
@@ -30,7 +31,9 @@ const App = () => {
   
     return (
         <div className="App">
-            <div className={'Sidebar'}></div>
+            <div className={'Sidebar'}>
+                <Score></Score>
+            </div>
             <div id="map" className={'NaverMap'}></div>
         </div>
     );
