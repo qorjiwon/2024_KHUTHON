@@ -1,60 +1,42 @@
-.Score {
-    text-align: center;
+.PollutionTypes {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
 
-    /* 가운데 정렬 */
-    .TotalScore {
-        font-family: Arial;
-        font-size: 1.2em;
-        /* 크기 조절 */
-        font-weight: bold;
-        /* 강조 */
-    }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 
-    .ScoreValue {
-        font-size: 2em;
-        /* 점수 칸의 크기를 크게 조절 */
-        margin-top: 10px;
-        /* 점수 칸과의 간격 설정 */
-    }
-
-    .PollutionTypes {
+    .PollutionType {
         display: flex;
-        /* Flexbox 사용하여 가로로 나열 */
-        justify-content: space-between;
-        /* 각 항목 사이의 간격을 균등하게 분배 */
-        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
 
-        /* 항목들과의 간격 설정 */
-        .PollutionType {
-            width: calc(33.33% - 10px);
+        .PollutionTypeName {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
 
-            /* 3등분하여 각 항목의 너비 설정 */
-            .PollutionTypeName {
-                font-weight: bold;
-                /* 각 항목 이름의 강조 설정 */
-            }
+        .PollutionTypeScore {
+            font-size: 1.25rem;
+        }
 
+        &:nth-child(1) {
             .PollutionTypeScore {
-                margin-top: 5px;
-                /* 점수 칸과의 간격 설정 */
+                color: red;
             }
+        }
 
-            &:nth-child(1) {
-                .PollutionTypeScore {
-                    color: red;
-                }
+        &:nth-child(2) {
+            .PollutionTypeScore {
+                color: green;
             }
+        }
 
-            &:nth-child(2) {
-                .PollutionTypeScore {
-                    color: green;
-                }
-            }
-
-            &:nth-child(3) {
-                .PollutionTypeScore {
-                    color: blue;
-                }
+        &:nth-child(3) {
+            .PollutionTypeScore {
+                color: blue;
             }
         }
     }

@@ -9,7 +9,7 @@
     .Sidebar {
         width: 600px;
         padding: 25px;
-
+        box-sizing: border-box;
         
         background-color: rgb(255, 255, 255);
         box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 5px 0px 15px 0px;
@@ -18,7 +18,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        
+        z-index: 1;
 
+        .TotalScore {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 1.75em;
+            font-weight: bold;
+
+            .ScoreValue {
+                font-size: 2em;
+                font-weight: bold;
+                color: orange;
+            }
+        }
     }
 
     .NaverMap {

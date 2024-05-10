@@ -31,8 +31,12 @@ const App = () => {
     return (
         <div className="App">
             <div className={'Sidebar'}>
-                <Score></Score>
+                <div className="TotalScore">
+                    {'오염도 총점'}
+                    <span className="ScoreValue">50</span>
+                </div>
                 <Graph/>
+                <Score/>
             </div>
             <div id="map" className={'NaverMap'}></div>
         </div>

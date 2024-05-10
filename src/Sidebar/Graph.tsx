@@ -35,7 +35,7 @@ export const Graph = () => {
                 options={tempChartData.state.options}
                 series={tempChartData.state.series}
                 type="line"
-                width={"400"}
+                width={"380"}
             />
         </div>
     )
