@@ -1,0 +1,34 @@
+.CountrySwiper {
+    height: 60px;
+    overflow: hidden;
+    font-size: 1.4rem;
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+
+        gap: 5px;
+
+        .blue {
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+    }
+}
+
+.Box {
+    width: 280px;
+    height: 62px;
+    border-radius: 7px;
+
+    position: absolute;
+    top: 778px;
+    left: 93px;
+    z-index: 2;
+    
+    box-shadow: rgba(0, 0, 50, 0.2) 0px 0px 5px 0px, rgba(0, 0, 50, 0.1) 5px 0px 15px 0px;
+}
