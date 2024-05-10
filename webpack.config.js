@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {  
     module: {
       rules: [
@@ -19,6 +21,9 @@ module.exports = {
   
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
+      alias: {
+        jquery: require.resolve('jquery/src/jquery')
+      }
     },
   };
   

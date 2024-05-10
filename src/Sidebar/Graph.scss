@@ -1,3 +1,10 @@
 .LineChart {
+    border-top: 1.3px solid rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
     overflow: hidden;
+
+    .apexcharts-xaxistooltip-text {
+        font-size: 2rem;
+
+    }
 }
